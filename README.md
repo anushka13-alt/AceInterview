@@ -268,7 +268,7 @@ AceInterview/
 └── README.md
 ---
 
-
+```
 ## **Installation & Setup**
 
 ### **Prerequisites**
