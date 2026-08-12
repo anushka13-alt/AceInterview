@@ -161,28 +161,60 @@ The platform tracks user performance to help identify areas that need improvemen
 ---
 
 ## **Platform Workflow**
+                         ┌──────────────────┐
+                         │      User        │
+                         └────────┬─────────┘
+                                  │
+             ┌────────────────────┼────────────────────┐
+             │                    │                    │
+             ▼                    ▼                    ▼
+    ┌────────────────┐   ┌────────────────┐   ┌────────────────┐
+    │ Resume Analysis│   │  AI Career     │   │ Mock Interview │
+    │                │   │     Coach      │   │                │
+    └───────┬────────┘   └───────┬────────┘   └───────┬────────┘
+            │                    │                    │
+            ▼                    ▼              ┌─────┴─────┐
+     AI Resume Feedback   Career Guidance       │           │
+                                               ▼           ▼
+                                            Chat        Video
+                                               │           │
+                                               └─────┬─────┘
+                                                     │
+                                                     ▼
+                                               AI Evaluation
+                                                     │
+                                                     ▼
+                                           Performance Feedback
 
-User
-  │
-  ├── Resume Analysis
-  │       └── AI Resume Feedback
-  │
-  ├── AI Career Coach
-  │       └── Personalized Career Guidance
-  │
-  ├── Mock Interview
-  │       ├── Chat Interview
-  │       └── Video Interview
-  │               └── AI Evaluation
-  │
-  └── Coding Platform
-          ├── Coding Questions
-          ├── Code Execution
-          ├── Test Cases
-          ├── Submission
-          ├── AI Hint
-          └── AI Code Review
-
+                         ┌──────────────────────────────┐
+                         │      Coding Platform         │
+                         └──────────────┬───────────────┘
+                                        │
+                                        ▼
+                                  Coding Questions
+                                        │
+                                        ▼
+                                   Code Editor
+                                        │
+                                        ▼
+                                 Run / Submit
+                                        │
+                                        ▼
+                                Code Execution
+                                        │
+                                        ▼
+                                 Test Validation
+                                        │
+                              ┌─────────┴─────────┐
+                              ▼                   ▼
+                          Accepted           Wrong Answer
+                              │                   │
+                              └─────────┬─────────┘
+                                        ▼
+                                  AI Code Review
+                                        │
+                                        ▼
+                                  AI Hint / Feedback
 
 
 ---
@@ -198,6 +230,7 @@ AceInterview/
 │   │   │   ├── dashboard/
 │   │   │   ├── interview/
 │   │   │   ├── coding/
+│   │   │   │   └── challenge/
 │   │   │   ├── resume/
 │   │   │   ├── ai-coach/
 │   │   │   ├── video-interview/
@@ -207,8 +240,17 @@ AceInterview/
 │   │   │
 │   │   ├── components/
 │   │   │   └── coding/
+│   │   │       ├── CodeEditor
+│   │   │       ├── Console
+│   │   │       ├── QuestionPanel
+│   │   │       ├── TestCasePanel
+│   │   │       └── AIReview
 │   │   │
 │   │   └── services/
+│   │       ├── coding/
+│   │       ├── interview/
+│   │       ├── resume/
+│   │       └── ai/
 │   │
 │   └── package.json
 │
@@ -220,14 +262,25 @@ AceInterview/
 │   │   ├── services/
 │   │   ├── scripts/
 │   │   ├── config/
-│   │   └── middleware/
+│   │   ├── middleware/
+│   │   ├── utils/
+│   │   ├── app.ts
+│   │   └── server.ts
 │   │
 │   └── package.json
 │
+├── judge0/
+│   └── Code execution configuration
+│
+├── judge0-old/
+│   └── Previous execution configuration
+│
+├── .gitignore
+│
 └── README.md
 
-
 ---
+
 
 ## **Installation & Setup**
 
