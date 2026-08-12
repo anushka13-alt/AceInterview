@@ -221,7 +221,7 @@ The platform tracks user performance to help identify areas that need improvemen
 
 ## **Project Structure**
 
-
+```text
 AceInterview/
 │
 ├── client/
@@ -230,7 +230,6 @@ AceInterview/
 │   │   │   ├── dashboard/
 │   │   │   ├── interview/
 │   │   │   ├── coding/
-│   │   │   │   └── challenge/
 │   │   │   ├── resume/
 │   │   │   ├── ai-coach/
 │   │   │   ├── video-interview/
@@ -240,29 +239,20 @@ AceInterview/
 │   │   │
 │   │   ├── components/
 │   │   │   └── coding/
-│   │   │       ├── CodeEditor
-│   │   │       ├── Console
-│   │   │       ├── QuestionPanel
-│   │   │       ├── TestCasePanel
-│   │   │       └── AIReview
 │   │   │
 │   │   └── services/
-│   │       ├── coding/
-│   │       ├── interview/
-│   │       ├── resume/
-│   │       └── ai/
 │   │
 │   └── package.json
 │
 ├── server/
 │   ├── src/
+│   │   ├── config/
 │   │   ├── controllers/
+│   │   ├── middleware/
 │   │   ├── models/
 │   │   ├── routes/
-│   │   ├── services/
 │   │   ├── scripts/
-│   │   ├── config/
-│   │   ├── middleware/
+│   │   ├── services/
 │   │   ├── utils/
 │   │   ├── app.ts
 │   │   └── server.ts
@@ -270,15 +260,12 @@ AceInterview/
 │   └── package.json
 │
 ├── judge0/
-│   └── Code execution configuration
 │
 ├── judge0-old/
-│   └── Previous execution configuration
 │
 ├── .gitignore
 │
 └── README.md
-
 ---
 
 
