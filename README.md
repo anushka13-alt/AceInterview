@@ -332,38 +332,6 @@ Users can use AI hints and AI code reviews to understand their mistakes and impr
 
 Interview sessions and coding submissions can be reviewed to understand progress and identify areas requiring additional practice.
 
----<img width="1107" height="632" alt="Screenshot 2026-08-12 at 1 19 11 PM" src="https://github.com/user-attachments/assets/2db0699e-a626-4ff5-aee7-232ecb928560" />
-
-
-## **Screenshots**
-
-Screenshots of the major AceInterview modules can be added here to showcase the platform interface.
-
-### **Dashboard**
-
-_Add dashboard screenshot here._
-
-### **AI Resume Analyzer**
-
-_Add resume analyzer screenshot here._
-
-### **AI Career Coach**
-
-_Add AI Career Coach screenshot here._
-
-### **Mock Interview**
-
-_Add mock interview screenshot here._
-
-### **Video Interview**
-
-_Add video interview screenshot here._
-
-### **Coding Platform**
-
-_Add coding platform screenshot here._
-
----
 
 ## **Project Status**
 
