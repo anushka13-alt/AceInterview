@@ -75,7 +75,6 @@ AceInterview includes an integrated coding practice environment for technical in
 - Company-oriented coding questions
 - Topic-based coding problems
 - Difficulty levels
-- C++ coding support
 - Custom test cases
 - Code execution
 - Code submission
@@ -163,7 +162,6 @@ The platform tracks user performance to help identify areas that need improvemen
 
 ## **Platform Workflow**
 
-```text
 User
   │
   ├── Resume Analysis
@@ -191,7 +189,7 @@ User
 
 ## **Project Structure**
 
-```text
+
 AceInterview/
 │
 ├── client/
@@ -245,8 +243,7 @@ Before running AceInterview locally, make sure the following are installed:
 
 ## **Installation**
 
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone <https://github.com/anushka13-alt/AceInterview/tree/main>
 cd AceInterview
 
 # Client
@@ -268,7 +265,6 @@ AceInterview uses environment variables to securely store database credentials, 
 
 Create a `.env` file inside the `server` directory:
 
-```env
 PORT=5000
 
 MONGODB_URI=your_mongodb_connection_string
@@ -335,7 +331,7 @@ Interview sessions and coding submissions can be reviewed to understand progress
 
 ## **Project Status**
 
-AceInterview is currently under active development.
+AceInterview is in active development.
 
 The core platform includes AI resume analysis, AI career coaching, mock interviews, chat interviews, video interviews, coding practice, code execution, test-case validation, solution submissions, AI coding hints and AI code reviews.
 
