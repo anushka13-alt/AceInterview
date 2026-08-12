@@ -228,346 +228,167 @@ AceInterview/
 │
 └── README.md
 
----
-
-## **AI Capabilities**
-
-AceInterview integrates AI across multiple parts of the platform to provide personalized interview preparation.
-
-### **Resume Intelligence**
-
-Analyzes uploaded resumes and provides insights into skills, strengths, weaknesses and areas for improvement.
-
-### **Interview Intelligence**
-
-Generates personalized interview questions and evaluates candidate responses based on the selected role and interview context.
-
-### **Career Intelligence**
-
-Provides personalized career guidance and preparation recommendations through the AI Career Coach.
-
-### **Coding Intelligence**
-
-Assists users during coding preparation through AI-generated coding questions, hints and automated code reviews.
 
 ---
 
-## **Interview Workflow**
+## **Installation & Setup**
 
-```text
-Select Role / Company
-        │
-        ▼
-Choose Difficulty
-        │
-        ▼
-Generate AI Questions
-        │
-        ▼
-Choose Interview Mode
-        │
-   ┌────┴────┐
-   ▼         ▼
- Chat       Video
-   │         │
-   └────┬────┘
-        ▼
-Submit Answers
-        │
-        ▼
-AI Evaluation
-        │
-        ▼
-Performance Feedback
-        │
-        ▼
-Improvement Recommendations
+### **Prerequisites**
 
+Before running AceInterview locally, make sure the following are installed:
+
+- Node.js 18 or higher
+- npm
+- MongoDB
+- Git
+- Docker (optional)
+
+## **Installation**
+
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd AceInterview
+
+# Client
+cd client
+npm install
+npm run dev
+
+# Server
+cd ../server
+npm install
+npm run dev
+---
 
 ---
 
-## **Coding Platform Architecture**
+## **Environment Variables**
 
-AceInterview includes an integrated coding environment for technical interview preparation. Users can solve coding problems, run their solutions, test custom inputs and submit solutions for validation.
+AceInterview uses environment variables to securely store database credentials, authentication secrets and AI API keys.
 
-```text
-User
- │
- ▼
-Coding Problem
- │
- ▼
-Code Editor
- │
- ▼
-Run / Submit
- │
- ▼
-Backend API
- │
- ▼
-Code Execution
- │
- ▼
-Test Case Validation
- │
- ├── Accepted
- │
- └── Wrong Answer
- │
- ▼
-Submission Result
- │
- ├── Runtime
- ├── Memory
- └── Failed Test Case
+Create a `.env` file inside the `server` directory:
+
+```env
+PORT=5000
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+GEMINI_API_KEY=your_gemini_api_key
+
+NODE_ENV=development
+
+For the client, create a .env.local file inside the client directory if your frontend configuration requires environment variables:
+NEXT_PUBLIC_API_URL=http://localhost:5000
 
 
 ---
 
-## **Coding Features**
+## **How the Platform Works**
 
-### **Problem Practice**
+AceInterview follows an end-to-end preparation workflow that allows users to prepare for interviews, practice coding and receive AI-powered feedback from a single platform.
 
-Practice coding problems organized by common interview topics and difficulty levels.
+### **1. Create an Account**
 
-### **Code Editor**
+Users create an account and access their personalized AceInterview dashboard.
 
-Write and edit solutions directly inside the integrated coding environment.
+### **2. Analyze Your Resume**
 
-### **Code Execution**
+Upload a resume and receive AI-generated insights about skills, strengths, weaknesses and improvement areas.
 
-Run your solution before submission to check its output against test inputs.
+### **3. Get Career Guidance**
 
-### **Custom Test Cases**
+Use the AI Career Coach to discuss career goals, placement preparation, technical skills and learning priorities.
 
-Provide custom inputs to test different scenarios and edge cases.
+### **4. Prepare for Interviews**
 
-### **Solution Submission**
+Select a target role, company and difficulty level to generate personalized AI interview questions.
 
-Submit solutions for validation against the configured test cases.
+### **5. Choose Interview Mode**
 
-### **Submission Verdicts**
+Users can practice through:
 
-The platform provides clear results such as:
+- **Chat Interview**
+- **Video Interview**
 
-- **Accepted**
-- **Wrong Answer**
-- **Compilation Error**
-- **Runtime Error**
+### **6. Receive AI Feedback**
 
-### **AI Coding Assistance**
+After answering interview questions, the AI analyzes the responses and provides performance feedback, strengths, weaknesses and improvement suggestions.
 
-The coding environment also provides AI-powered assistance:
+### **7. Practice Coding**
 
-- **AI Hint** for solving problems without directly revealing the solution
-- **AI Code Review** for reviewing submitted code
-- **Complexity Feedback** for understanding time and space complexity
+Users can select coding problems based on topics, companies and difficulty levels and solve them using the integrated code editor.
 
----
+### **8. Run and Submit Code**
 
-## **Resume Analysis Workflow**
+Solutions can be executed against test cases before being submitted for validation.
 
-```text
-Upload Resume
-      │
-      ▼
-Resume Processing
-      │
-      ▼
-AI Resume Analysis
-      │
-      ▼
-Resume Evaluation
-      │
- ┌────┼────────────┐
- ▼    ▼            ▼
-Skills Strengths  Weaknesses
-      │
-      ▼
-Missing Skills / Keywords
-      │
-      ▼
-Improvement Suggestions
+### **9. Improve with AI**
+
+Users can use AI hints and AI code reviews to understand their mistakes and improve their solutions.
+
+### **10. Track Preparation**
+
+Interview sessions and coding submissions can be reviewed to understand progress and identify areas requiring additional practice.
+
+---<img width="1107" height="632" alt="Screenshot 2026-08-12 at 1 19 11 PM" src="https://github.com/user-attachments/assets/2db0699e-a626-4ff5-aee7-232ecb928560" />
 
 
----
+## **Screenshots**
 
-## **AI Career Coach**
+Screenshots of the major AceInterview modules can be added here to showcase the platform interface.
 
-The AI Career Coach provides personalized guidance based on the user's career goals, skills and preparation progress.
+### **Dashboard**
 
-### **Career Guidance**
+_Add dashboard screenshot here._
 
-Users can interact with the AI Career Coach to get guidance related to:
+### **AI Resume Analyzer**
 
-- Career planning
-- Technical skill development
-- Interview preparation
-- Placement preparation
-- Role-specific learning paths
-- Technology and skill recommendations
+_Add resume analyzer screenshot here._
 
-### **Personalized Recommendations**
+### **AI Career Coach**
 
-The AI Coach can help users identify:
+_Add AI Career Coach screenshot here._
 
-- Skills they should improve
-- Topics they should prioritize
-- Areas where they are weak
-- Recommended preparation strategies
-- Interview and coding practice recommendations
+### **Mock Interview**
+
+_Add mock interview screenshot here._
+
+### **Video Interview**
+
+_Add video interview screenshot here._
+
+### **Coding Platform**
+
+_Add coding platform screenshot here._
 
 ---
 
-## **Chat Interview**
+## **Project Status**
 
-The Chat Interview module provides a conversational interview experience where users interact with an AI interviewer.
+AceInterview is currently under active development.
 
-```text
-Start Interview
-      │
-      ▼
-AI Generates Question
-      │
-      ▼
-User Submits Answer
-      │
-      ▼
-AI Evaluates Response
-      │
-      ▼
-Follow-up Question
-      │
-      ▼
-Continue Interview
-      │
-      ▼
-Final Evaluation
-      │
-      ▼
-Interview Feedback
-
+The core platform includes AI resume analysis, AI career coaching, mock interviews, chat interviews, video interviews, coding practice, code execution, test-case validation, solution submissions, AI coding hints and AI code reviews.
 
 ---
 
-## **Video Interview**
+## **Author**
 
-The Video Interview module provides a realistic interview environment where users can practice answering questions while using their camera.
+**Anushka Bisht**
 
-### **Video Interview Experience**
+B.Tech Computer Science & Engineering (AI)
 
-Users can participate in an AI-powered interview session designed to simulate a real interview environment.
-
-- Camera-based interview practice
-- AI-generated interview questions
-- Question-by-question interview flow
-- Interview progress tracking
-- Real-time interaction
-- Interview session management
-- AI-powered answer evaluation
-- Final performance feedback
-
-### **Video Interview Workflow**
-
-```text
-Start Video Interview
-        │
-        ▼
-Enable Camera
-        │
-        ▼
-AI Generates Question
-        │
-        ▼
-User Answers
-        │
-        ▼
-Move to Next Question
-        │
-        ▼
-Complete Interview
-        │
-        ▼
-AI Evaluation
-        │
-        ▼
-Performance Feedback
-
+Graphic Era Deemed University
 
 ---
 
-## **AI Interview Evaluation**
+## **License**
 
-After completing an interview, AceInterview uses AI to evaluate the candidate's responses and generate personalized performance feedback.
-
-### **Evaluation Process**
-
-```text
-Interview Completed
-        │
-        ▼
-Collect Candidate Responses
-        │
-        ▼
-AI Evaluation
-        │
-        ▼
-Analyze Responses
-        │
- ┌──────┼───────────┐
- ▼      ▼           ▼
-Clarity Relevance Technical
-        │           Understanding
-        └─────┬─────┘
-              ▼
-       Generate Feedback
-              │
-              ▼
-    Strengths & Weaknesses
-              │
-              ▼
-   Improvement Recommendations
+This project is developed for educational, portfolio and interview-preparation purposes.
 
 ---
 
-## **Interview Feedback & Analytics**
 
-AceInterview converts the AI evaluation into a structured feedback report that helps users understand their interview performance and identify areas for improvement.
-
-### **Performance Breakdown**
-
-The feedback report can include:
-
-- Overall interview performance
-- Question-wise evaluation
-- Answer relevance
-- Technical understanding
-- Clarity of responses
-- Identified strengths
-- Identified weaknesses
-- Improvement recommendations
-
-### **Question-Wise Feedback**
-
-For each interview question, users can review their response along with AI-generated insights.
-
-```text
-Interview Question
-        │
-        ▼
-Candidate Answer
-        │
-        ▼
-AI Analysis
-        │
- ┌──────┼──────────────┐
- ▼      ▼              ▼
-What    What Could     Better
-Went    Be Improved    Approach
-Well
-        │
-        ▼
-Improved Answer Guidance
 
 
